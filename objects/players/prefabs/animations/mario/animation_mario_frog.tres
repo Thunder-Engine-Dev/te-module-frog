@@ -1,0 +1,165 @@
+[gd_resource type="SpriteFrames" load_steps=18 format=3 uid="uid://c2x3m8e3m7txx"]
+
+[ext_resource type="Texture2D" uid="uid://dfhk3nrknsp47" path="res://modules/frog/objects/players/prefabs/textures/mario/mario_frog_extra.png" id="2_f5tji"]
+[ext_resource type="Texture2D" uid="uid://x22staqbsc7h" path="res://modules/frog/objects/players/prefabs/textures/mario/mario_frog.png" id="3_37yut"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1o7f"]
+atlas = ExtResource("3_37yut")
+region = Rect2(256, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23ruf"]
+atlas = ExtResource("3_37yut")
+region = Rect2(192, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cy81y"]
+atlas = ExtResource("3_37yut")
+region = Rect2(0, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvc81"]
+atlas = ExtResource("3_37yut")
+region = Rect2(128, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flnar"]
+atlas = ExtResource("3_37yut")
+region = Rect2(448, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwf11"]
+atlas = ExtResource("3_37yut")
+region = Rect2(512, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oi8d2"]
+atlas = ExtResource("3_37yut")
+region = Rect2(576, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7v6il"]
+atlas = ExtResource("2_f5tji")
+region = Rect2(96, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lil27"]
+atlas = ExtResource("2_f5tji")
+region = Rect2(128, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4nyv"]
+atlas = ExtResource("2_f5tji")
+region = Rect2(160, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0802"]
+atlas = ExtResource("2_f5tji")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xv8y"]
+atlas = ExtResource("2_f5tji")
+region = Rect2(64, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4eotx"]
+atlas = ExtResource("2_f5tji")
+region = Rect2(32, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gn0g"]
+atlas = ExtResource("3_37yut")
+region = Rect2(64, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hp0jt"]
+atlas = ExtResource("3_37yut")
+region = Rect2(128, 0, 64, 80)
+
+[resource]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"appear",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1o7f")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23ruf")
+}],
+"loop": false,
+"name": &"climb",
+"speed": 0.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"crouch",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cy81y")
+}],
+"loop": false,
+"name": &"default",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvc81")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flnar")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwf11")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oi8d2")
+}],
+"loop": false,
+"name": &"swim",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7v6il")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lil27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4nyv")
+}],
+"loop": false,
+"name": &"swim_down",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0802")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6xv8y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4eotx")
+}],
+"loop": false,
+"name": &"swim_up",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cy81y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gn0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hp0jt")
+}],
+"loop": false,
+"name": &"walk",
+"speed": 8.0
+}]
