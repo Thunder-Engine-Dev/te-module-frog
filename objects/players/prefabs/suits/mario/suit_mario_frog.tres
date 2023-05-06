@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="PlayerSuit" load_steps=11 format=3 uid="uid://bh70l1k285qxh"]
+[gd_resource type="Resource" script_class="PlayerSuit" load_steps=28 format=3 uid="uid://bh70l1k285qxh"]
 
 [ext_resource type="Script" path="res://modules/frog/objects/players/behaviors/frog_animation_behavior.gd" id="1_4vrrj"]
-[ext_resource type="SpriteFrames" uid="uid://c2x3m8e3m7txx" path="res://modules/frog/objects/players/prefabs/animations/mario/animation_mario_frog.tres" id="2_k4t1s"]
+[ext_resource type="Texture2D" uid="uid://x22staqbsc7h" path="res://modules/frog/objects/players/prefabs/textures/mario/mario_frog.png" id="2_ibri4"]
+[ext_resource type="Texture2D" uid="uid://dfhk3nrknsp47" path="res://modules/frog/objects/players/prefabs/textures/mario/mario_frog_extra.png" id="3_ab8ci"]
 [ext_resource type="Script" path="res://modules/frog/objects/players/behaviors/frog_physics_behavior.gd" id="4_mfta5"]
 [ext_resource type="Resource" uid="uid://cmhi4m24voa1d" path="res://engine/objects/players/prefabs/suits/mario/suit_mario_super.tres" id="10_hmvun"]
 [ext_resource type="Resource" uid="uid://rhicphrr05ws" path="res://engine/objects/players/prefabs/configs/config_mario_default.tres" id="12_kb2mp"]
@@ -10,6 +11,167 @@
 [ext_resource type="Script" path="res://engine/objects/players/player_suit.gd" id="15_aluxm"]
 [ext_resource type="AudioStream" uid="uid://cpy66lof7ycli" path="res://engine/objects/players/prefabs/sounds/music-die.ogg" id="16_3bufn"]
 [ext_resource type="AudioStream" uid="uid://c4mxnbmb5vv2u" path="res://engine/objects/players/prefabs/sounds/pipe.wav" id="17_ps66l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1o7f"]
+atlas = ExtResource("2_ibri4")
+region = Rect2(256, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23ruf"]
+atlas = ExtResource("2_ibri4")
+region = Rect2(192, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cy81y"]
+atlas = ExtResource("2_ibri4")
+region = Rect2(0, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvc81"]
+atlas = ExtResource("2_ibri4")
+region = Rect2(128, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flnar"]
+atlas = ExtResource("2_ibri4")
+region = Rect2(448, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwf11"]
+atlas = ExtResource("2_ibri4")
+region = Rect2(512, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oi8d2"]
+atlas = ExtResource("2_ibri4")
+region = Rect2(576, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7v6il"]
+atlas = ExtResource("3_ab8ci")
+region = Rect2(96, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lil27"]
+atlas = ExtResource("3_ab8ci")
+region = Rect2(128, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4nyv"]
+atlas = ExtResource("3_ab8ci")
+region = Rect2(160, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0802"]
+atlas = ExtResource("3_ab8ci")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xv8y"]
+atlas = ExtResource("3_ab8ci")
+region = Rect2(64, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4eotx"]
+atlas = ExtResource("3_ab8ci")
+region = Rect2(32, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gn0g"]
+atlas = ExtResource("2_ibri4")
+region = Rect2(64, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hp0jt"]
+atlas = ExtResource("2_ibri4")
+region = Rect2(128, 0, 64, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2rkck"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"appear",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1o7f")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23ruf")
+}],
+"loop": false,
+"name": &"climb",
+"speed": 0.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"crouch",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cy81y")
+}],
+"loop": false,
+"name": &"default",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvc81")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flnar")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwf11")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oi8d2")
+}],
+"loop": false,
+"name": &"swim",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7v6il")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lil27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4nyv")
+}],
+"loop": false,
+"name": &"swim_down",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0802")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6xv8y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4eotx")
+}],
+"loop": false,
+"name": &"swim_up",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cy81y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gn0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hp0jt")
+}],
+"loop": false,
+"name": &"walk",
+"speed": 8.0
+}]
 
 [resource]
 script = ExtResource("15_aluxm")
@@ -21,7 +183,7 @@ physics_behavior = ExtResource("4_mfta5")
 physics_crouchable = false
 physics_shaper = ExtResource("13_rqavb")
 physics_shaper_crouch = ExtResource("14_fxty2")
-animation_sprites = ExtResource("2_k4t1s")
+animation_sprites = SubResource("SpriteFrames_2rkck")
 animation_behavior = ExtResource("1_4vrrj")
 extra_vars = {}
 sound_hurt = ExtResource("17_ps66l")

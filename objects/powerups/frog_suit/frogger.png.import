@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cura6nrjr80f6"
-path="res://.godot/imported/texture.png-39d7a8c34a59b464cf5eae7d7303ffb2.ctex"
+uid="uid://dfouc7nu54ty"
+path="res://.godot/imported/frogger.png-ed95079ec09b22e7191ee3d4cce61fbf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://modules/frog/objects/powerups/frog_suit/texture.png"
-dest_files=["res://.godot/imported/texture.png-39d7a8c34a59b464cf5eae7d7303ffb2.ctex"]
+source_file="res://modules/frog/objects/powerups/frog_suit/frogger.png"
+dest_files=["res://.godot/imported/frogger.png-ed95079ec09b22e7191ee3d4cce61fbf.ctex"]
 
 [params]
 
